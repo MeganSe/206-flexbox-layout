@@ -96,58 +96,117 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
-  height: 100%;
-  width: 100%;
+    background-color: #262626;
+    height: 100%;
+    width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 0 2em;
-  font-size: 1.25em;
-  height: 100%;
-  color: #fff;
-}
-
-header,
-footer {
-  background-color: #222;
-  height: 80px;
-  width: 100%;
-}
-
-main {
-  background-color: #ccc;
-  height: 250px;
-  width: 100%;
-}
-
-header,
-footer,
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0 2em;
+    font-size: 1em;
+    height: 100%;
+    color: #fff;
 }
 
 .flex-container {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
-    flex-flow: row wrap;
+}
+
+p span {
+    font-family: 'Lora', serif; 
+    font-weight: 600;
+}
+
+header,
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header h1 {
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+}
+
+main {
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25em;
+    border-bottom: 2px solid grey;
+    margin-bottom: 1.25em;
+    padding-bottom: 0.5em;
 }
 
 .flex-items {
     color: #fff;
     line-height: 1.5em;
-    font-size: 1.6em;
-    background-color: #f16059;
-    width: 30%;
-    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 2em;
+    flex-basis: 33.3%;
+    flex: 1;
 }
+
+#div-1 {
+    border: none;
+    padding-left: 0;
+}
+
+#div-2 {
+    border-left: 0.5px solid grey;
+    border-right: 0.5px solid grey;
+}
+
+#div-3 {
+    padding-right: 0;
+}
+
+footer {
+    margin: 1.25em 0;
+    border-top: 2px solid grey;
+    padding: 1.5em 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 35%;
+
+}
+
+#insta {
+    height: 32px;
+    padding-right: 1.25em;
+}
+
+#li-in {
+    height: 32px;
+    padding-right: 0.75em;
+
+}
+
+#git {
+    height: 32px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
